@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.side-left {
+    max-width: 320px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.side-right {
+    max-width: 420px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #F2F2F2;
+}
+
