@@ -1,65 +1,117 @@
 * {
     box-sizing: border-box;
-}
-
-.main {
+  }
+  .main {
     display: flex;
-    max-width: 1948px;
+    height: 100vh;
+    max-width: 1940px;
     padding: 0 10px;
     margin: 0 auto;
-}
+  }
+  /*Side left*/
 
-.side-left {
-     max-width: 320px;
-    width: 100%; 
-
+  .side-left {
+    max-width: 320px;
+    width: 100%;
+    padding: 30px 25px 0 60px;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: blueviolet;
-    padding: 30px;
-    padding-left: 100px;
-    padding-right: 25px;
-
-    border: 1px solid red;
-
-    height: 100vh;
-}
-
-.side-right {
+  }
+  
+  .side-right {
     max-width: 420px;
     width: 100%;
-     
     background-color: yellow;
-}
-
-.content {
+  }
+  .content {
     flex-grow: 1;
-    background-color: #F2F2F2;
-}
-
-.hr {
-    width: 100px;
+    background-color: #f2f2f2;
+  }
+  
+  .hr {
+    width: 180px;
     border: 0.5px solid #a4acad;
-    margin-top: 30px;
-}
-
-.nav__item {
+    border-radius: 2px;
+  }
+  
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .nav__item {
     margin-bottom: 30px;
+    padding-left: 40px;
+    position: relative;
+  }
+  .nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("./img/icons/1.png");
+    background-repeat: no-repeat;
+  }
+
+.nav__shortly {
+    position: absolute;
+    background-color: #eb5757;
+    left: 100px;
+    top: -10px;
+    border-radius: 10px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
 }
 
-.nav__link {
-    font-family: 'Roboto', sans-serif;
+.nav__item--pizza::before {
+    background-image: url(./img/icons/1.png);
+}
+.nav__item--set::before {
+    background-image: url(./img/icons/Сеты.png);
+}
+.nav__item--wok::before {
+    background-image: url(./img/icons/4.png);
+}
+.nav__item--roll::before {
+    background-image: url(./img/icons/Роллы.png);
+}
+.nav__item--sushi::before {
+    background-image: url(./img/icons/Суши.png);
+}
+.nav__item--salat::before {
+    background-image: url(./img/icons/Салаты.png);
+}
+.nav__item--soup::before {
+    background-image: url(./img/icons/Супы.png);
+}
+.nav__item--korn::before {
+    background-image: url(./img/icons/2.png);
+}
+.nav__item--drink::before {
+    background-image: url(./img/icons/3.png);
+}
+.nav__item--sales::before {
+    background-image: url(./img/icons/Акции.png);
+}
+  .nav__link {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-
     text-decoration: none;
-    color: black;
-}
-
-.nav__item:hover .nav__link {
+    color: #000;
+  }
+  .nav__item:hover .nav__link {
     color: #ff9846;
-}
+  }
+
