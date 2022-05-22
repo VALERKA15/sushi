@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <main class="main">
@@ -52,13 +56,13 @@
       </aside>
       <section class="content">main
         <div class="header">
-          <div class="header_left">
+          <div class="header__left">
             <p>Наш телефон</p>
             <a href="tel:+996 705 188 755" class="phone">+996 705 188 755</p>
             <a href="tel:+845 656 658 648" class="phone">+845 656 658 648</p>
             <p class="work-time">работаем з 6 до 7</p>
           </div>
-          <div class="header_right">
+          <div class="header__right">
             <div class="location">
               <p class="location__text"></p>
               <p class="location__city"></p>
@@ -77,6 +81,37 @@
               <button class="search"></button>
             </div>
           </div>
+        </div>
+        <div class="sushi-slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1
+                <img src="./img/Rectangle 1.png" alt="swiper-image">
+              </div>
+              <div class="swiper-slide">Slide 2
+                <img src="./img/Rectangle 1.png" alt="swiper-image">
+              </div>
+              <div class="swiper-slide">Slide 3
+                <img src="./img/Rectangle 1.png" alt="swiper-image">
+              </div>
+              <div class="swiper-slide">Slide 4
+                <img src="./img/Rectangle 1.png" alt="swiper-image">
+              </div>
+              <div class="swiper-slide">Slide 5
+                <img src="./img/Rectangle 1.png" alt="swiper-image">
+              </div>
+            </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+        <div class="products">
+          <div class="products__item"></div>
+          <div class="products__item">
+            <div class="products__item_half"></div>
+            <div class="products__item_half"></div>
+          </div>
+          <div class="products__item"></div>
+          <div class="products__item"></div>
         </div>
       </section>
       <aside class="side-right">
@@ -99,5 +134,7 @@
     </aside>
     </main>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
   </body>
 </html>
